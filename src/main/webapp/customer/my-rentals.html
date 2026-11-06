@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Rentals</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-brand"><div class="brand-icon"><i class="fa-solid fa-car"></i></div><span>DriveEase Rentals</span></div>
+        <nav><ul class="nav-links"><li><a href="../"><i class="fa-solid fa-house"></i> Fleet Catalog</a></li><li><a href="./dashboard.html"><i class="fa-solid fa-gauge"></i> My Dashboard</a></li><li><a href="./my-rentals.html" class="active"><i class="fa-solid fa-clock-rotate-left"></i> My Bookings</a></li><li><a href="./book.html"><i class="fa-solid fa-plus-circle"></i> Book Vehicle</a></li></ul></nav>
+        <div class="nav-user"><div class="user-avatar" style="background: #0284c7;"><i class="fa-solid fa-user"></i></div><div><span class="user-name">John Smith</span><span class="badge badge-customer" style="margin-left: 0.25rem;">Customer</span></div><a href="../login.html" class="btn btn-secondary btn-sm" style="margin-left: 0.75rem;"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></div>
+    </header>
+
+    <main class="container">
+        <div class="page-header"><div class="page-title"><h1>My Rental History</h1><p>Review your bookings, active vehicles, and completed rentals.</p></div></div>
+        <div class="card">
+            <div class="table-responsive">
+                <table>
+                    <thead><tr><th>Rental #</th><th>Vehicle</th><th>Rental Start</th><th>Expected Return</th><th>Estimated Charge</th><th>Status</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>#RN-101</strong></td>
+                            <td><strong>CityDrive S</strong><br><small class="text-muted">TN 07 AB 1234 &bull; Sedan</small></td>
+                            <td>2026-10-02</td>
+                            <td>2026-10-05</td>
+                            <td><strong>₹11,400</strong></td>
+                            <td><span class="badge badge-returned"><i class="fa-solid fa-check"></i> Returned</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>#RN-105</strong></td>
+                            <td><strong>TrailBlazer X</strong><br><small class="text-muted">DL 4C B 8855 &bull; SUV</small></td>
+                            <td>2026-10-06</td>
+                            <td>2026-10-10</td>
+                            <td><strong>₹5,400</strong></td>
+                            <td><span class="badge badge-rented"><i class="fa-solid fa-circle-dot"></i> ACTIVE</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

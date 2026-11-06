@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-brand"><div class="brand-icon"><i class="fa-solid fa-car"></i></div><span>DriveEase Rentals</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../"><i class="fa-solid fa-house"></i> Fleet Catalog</a></li>
+                <li><a href="./dashboard.html" class="active"><i class="fa-solid fa-gauge"></i> My Dashboard</a></li>
+                <li><a href="./my-rentals.html"><i class="fa-solid fa-clock-rotate-left"></i> My Bookings</a></li>
+                <li><a href="./book.html"><i class="fa-solid fa-plus-circle"></i> Book Vehicle</a></li>
+            </ul>
+        </nav>
+        <div class="nav-user">
+            <div class="user-avatar" style="background: #0284c7;"><i class="fa-solid fa-user"></i></div>
+            <div><span class="user-name">John Smith</span><span class="badge badge-customer" style="margin-left: 0.25rem;">Customer</span></div>
+            <a href="../login.html" class="btn btn-secondary btn-sm" style="margin-left: 0.75rem;"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="customer-hero" style="margin-top: 1.5rem;">
+            <div><h2>Hello, John Smith! ??</h2><p>Welcome to your personal rental dashboard. Browse available vehicles or manage your bookings.</p></div>
+            <div><a href="./book.html" class="btn btn-success" style="font-size: 1rem; padding: 0.75rem 1.5rem;"><i class="fa-solid fa-key"></i> Rent a Vehicle Now</a></div>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card"><div class="metric-icon" style="background: #e0f2fe; color: #0284c7;"><i class="fa-solid fa-car"></i></div><div class="metric-info"><h3>1</h3><p>Active Rentals</p></div></div>
+            <div class="metric-card"><div class="metric-icon" style="background: #ecfdf5; color: #10b981;"><i class="fa-solid fa-receipt"></i></div><div class="metric-info"><h3>2</h3><p>Total Bookings</p></div></div>
+            <div class="metric-card"><div class="metric-icon" style="background: #fef3c7; color: #d97706;"><i class="fa-solid fa-warehouse"></i></div><div class="metric-info"><h3>9</h3><p>Vehicles Ready to Rent</p></div></div>
+        </div>
+
+        <div class="card" style="margin-top: 2rem;">
+            <div class="card-header">
+                <div><h3><i class="fa-solid fa-key" style="color: var(--primary);"></i> Your Active Rentals</h3><p>Vehicles currently in your possession</p></div>
+                <a href="./my-rentals.html" class="btn btn-secondary btn-sm">View All History <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead><tr><th>Rental #</th><th>Vehicle</th><th>Rental Start</th><th>Expected Return</th><th>Estimated Charge</th><th>Status</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>#RN-105</strong></td>
+                            <td><strong>TrailBlazer X</strong><br><small class="text-muted">DL 4C B 8855 &bull; SUV</small></td>
+                            <td>2026-10-06</td>
+                            <td>2026-10-10</td>
+                            <td><strong style="color: var(--primary);">₹5,400</strong></td>
+                            <td><span class="badge badge-rented"><i class="fa-solid fa-circle-dot"></i> ACTIVE</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card" style="margin-top: 2rem; margin-bottom: 3rem;">
+            <div class="card-header"><div><h3><i class="fa-solid fa-car-side" style="color: #0284c7;"></i> Available Fleet for Instant Booking</h3><p>Select any available vehicle to book right now</p></div></div>
+            <div class="vehicle-catalog-grid" style="margin-top: 1rem;">
+                <div class="vehicle-card">
+                    <div class="vehicle-card-visual" style="height: 120px;"><i class="fa-solid fa-car-side" style="color: #38bdf8;"></i><span class="type-pill">Sedan</span><span class="badge badge-available">AVAILABLE</span></div>
+                    <div class="vehicle-card-content"><div><h4 style="font-size: 1.1rem;">CityDrive S</h4><p class="vehicle-card-specs">Toyota &bull; Corolla</p><span class="vehicle-card-plate">TN 07 AB 1234</span></div><div class="vehicle-card-footer" style="margin-top: 1rem;"><div class="vehicle-price">₹3,800 <span>/ day</span></div><a href="./book.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-key"></i> Rent</a></div></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

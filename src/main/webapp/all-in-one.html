@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveEase All-in-One Access</title>
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --surface: #ffffff;
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --success: #16a34a;
+            --text: #0f172a;
+            --muted: #475569;
+            --line: #e2e8f0;
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eff6ff, #f8fafc);
+            color: var(--text);
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 48px auto;
+            padding: 24px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #dbeafe;
+            color: var(--primary-dark);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: clamp(2rem, 3vw, 3rem);
+        }
+
+        p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+            margin-top: 28px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+        }
+
+        .card h2 {
+            font-size: 1.1rem;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 10px;
+        }
+
+        .card a {
+            display: block;
+            padding: 10px 12px;
+            background: #f8fafc;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .card a:hover {
+            border-color: var(--primary);
+            background: #eff6ff;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 26px;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="badge">DriveEase Rentals</div>
+            <h1>All Pages in One Place</h1>
+            <p>Use this single page to open every major screen in the vehicle rental system.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>Public / Main</h2>
+                <ul>
+                    <li><a href="./">Home Page</a></li>
+                    <li><a href="./login.html">Login / Access</a></li>
+                    <li><a href="./dashboard.html">Admin Dashboard</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Customer Portal</h2>
+                <ul>
+                    <li><a href="./customer/dashboard.html">Customer Dashboard</a></li>
+                    <li><a href="./customer/my-rentals.html">My Rentals</a></li>
+                    <li><a href="./customer/book.html">Book Vehicle</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Vehicle Management</h2>
+                <ul>
+                    <li><a href="./vehicles/list.html">Vehicles List</a></li>
+                    <li><a href="./vehicles/add.html">Add Vehicle</a></li>
+                    <li><a href="./vehicles/edit.html">Edit Vehicle</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Customer Management</h2>
+                <ul>
+                    <li><a href="./customers/list.html">Customers List</a></li>
+                    <li><a href="./customers/add.html">Add Customer</a></li>
+                    <li><a href="./customers/edit.html">Edit Customer</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Rental Management</h2>
+                <ul>
+                    <li><a href="./rentals/list.html">Rentals List</a></li>
+                    <li><a href="./rentals/add.html">Add Rental</a></li>
+                    <li><a href="./rentals/return.html">Return Rental</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            Open this page anytime: <strong>http://localhost:8000/all-in-one.html</strong>
+        </div>
+    </div>
+</body>
+</html>

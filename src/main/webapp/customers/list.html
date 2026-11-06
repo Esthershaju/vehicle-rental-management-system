@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-brand"><div class="brand-icon"><i class="fa-solid fa-car"></i></div><span>DriveEase Rentals</span></div>
+        <nav><ul class="nav-links"><li><a href="../dashboard.html"><i class="fa-solid fa-gauge"></i> Dashboard</a></li><li><a href="../vehicles/list.html"><i class="fa-solid fa-car-side"></i> Vehicles</a></li><li><a href="./list.html" class="active"><i class="fa-solid fa-users"></i> Customers</a></li><li><a href="../rentals/list.html"><i class="fa-solid fa-file-invoice-dollar"></i> Rentals</a></li></ul></nav>
+        <div class="nav-user"><div class="user-badge"><div class="user-avatar"><i class="fa-solid fa-user-shield"></i></div><span>Admin</span></div><a href="../login.html" class="btn btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></div>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <div class="page-title"><h1>Customer Directory</h1><p>Register new customers, manage contact details, and review rental associations.</p></div>
+            <div><a href="./add.html" class="btn btn-primary"><i class="fa-solid fa-user-plus"></i> Register Customer</a></div>
+        </div>
+
+        <div class="toolbar">
+            <form action="./list.html" method="GET" class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" name="keyword" class="search-input" placeholder="Search customer name, email, phone..." value="">
+            </form>
+            <div><span style="font-size: 0.875rem; color: var(--text-secondary);">Total Registered: <strong>2</strong></span></div>
+        </div>
+
+        <div class="card">
+            <div class="card-body" style="padding: 0;">
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr><th>ID</th><th>Customer Name</th><th>Phone Number</th><th>Email Address</th><th>Address</th><th style="text-align: right;">Actions</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>#1</strong></td>
+                                <td><div style="display: flex; align-items: center; gap: 0.6rem;"><div style="width: 32px; height: 32px; border-radius: 50%; background: #ede9fe; color: #7c3aed; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem;">J</div><strong>John Smith</strong></div></td>
+                                <td><i class="fa-solid fa-phone" style="color: var(--text-muted); font-size: 0.8rem;"></i> 555-0101</td>
+                                <td><i class="fa-solid fa-envelope" style="color: var(--text-muted); font-size: 0.8rem;"></i> john.smith@example.com</td>
+                                <td style="color: var(--text-secondary);">101 Main Street</td>
+                                <td style="text-align: right; white-space: nowrap;">
+                                    <a href="./edit.html" class="btn btn-sm btn-edit" title="Edit Customer"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                                    <a href="./list.html" class="btn btn-sm btn-delete" title="Delete Customer"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>#2</strong></td>
+                                <td><div style="display: flex; align-items: center; gap: 0.6rem;"><div style="width: 32px; height: 32px; border-radius: 50%; background: #ede9fe; color: #7c3aed; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem;">S</div><strong>Sarah Lee</strong></div></td>
+                                <td><i class="fa-solid fa-phone" style="color: var(--text-muted); font-size: 0.8rem;"></i> 555-0922</td>
+                                <td><i class="fa-solid fa-envelope" style="color: var(--text-muted); font-size: 0.8rem;"></i> sarah.lee@example.com</td>
+                                <td style="color: var(--text-secondary);">42 River Avenue</td>
+                                <td style="text-align: right; white-space: nowrap;">
+                                    <a href="./edit.html" class="btn btn-sm btn-edit" title="Edit Customer"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                                    <a href="./list.html" class="btn btn-sm btn-delete" title="Delete Customer"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vehicle Rental Management System | Java Servlets & HTML</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-brand"><div class="brand-icon"><i class="fa-solid fa-car"></i></div><span>DriveEase Rentals</span></div>
+        <nav><ul class="nav-links"><li><a href="../dashboard.html"><i class="fa-solid fa-gauge"></i> Dashboard</a></li><li><a href="../vehicles/list.html"><i class="fa-solid fa-car-side"></i> Vehicles</a></li><li><a href="../customers/list.html"><i class="fa-solid fa-users"></i> Customers</a></li><li><a href="./list.html" class="active"><i class="fa-solid fa-file-invoice-dollar"></i> Rentals</a></li></ul></nav>
+        <div class="nav-user"><div class="user-badge"><div class="user-avatar"><i class="fa-solid fa-user-shield"></i></div><span>Admin</span></div><a href="../login.html" class="btn btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></div>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <div class="page-title"><h1>Rental Records</h1><p>Track active and returned rentals across the fleet.</p></div>
+            <div><a href="./add.html" class="btn btn-primary"><i class="fa-solid fa-plus-circle"></i> Create New Rental</a></div>
+        </div>
+
+        <div class="toolbar">
+            <form action="./list.html" method="GET" class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" name="keyword" class="search-input" placeholder="Search customer, vehicle or status..." value="">
+            </form>
+            <ul class="filter-pills">
+                <li><a href="./list.html" class="filter-pill active">All Rentals</a></li>
+                <li><a href="./list.html" class="filter-pill">Active</a></li>
+                <li><a href="./list.html" class="filter-pill">Returned</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-body" style="padding: 0;">
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr><th>Rental #</th><th>Customer</th><th>Vehicle</th><th>Booking Date</th><th>Return Date</th><th>Amount</th><th>Status</th><th style="text-align: right;">Action</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>#101</strong></td>
+                                <td><strong>John Smith</strong><br><small>555-0101</small></td>
+                                <td><strong>CityDrive S</strong><br><small>TN 07 AB 1234</small></td>
+                                <td>2026-10-02</td>
+                                <td>2026-10-05</td>
+                                <td><strong>₹11,400</strong></td>
+                                <td><span class="badge badge-returned"><i class="fa-solid fa-check"></i> Returned</span></td>
+                                <td style="text-align: right;"><span style="color: var(--text-muted); font-size: 0.85rem;"><i class="fa-solid fa-circle-check"></i> Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>#105</strong></td>
+                                <td><strong>Sarah Lee</strong><br><small>555-0922</small></td>
+                                <td><strong>TrailBlazer X</strong><br><small>DL 4C B 8855</small></td>
+                                <td>2026-10-06</td>
+                                <td>In Progress</td>
+                                <td><strong>₹5,400</strong></td>
+                                <td><span class="badge badge-active"><i class="fa-solid fa-clock"></i> ACTIVE</span></td>
+                                <td style="text-align: right;"><a href="./return.html" class="btn btn-sm btn-return"><i class="fa-solid fa-rotate-left"></i> Return</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vehicle Rental Management System | Java Servlets & HTML</p>
+    </footer>
+</body>
+</html>

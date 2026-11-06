@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveEase Rentals</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-brand">
+            <div class="brand-icon"><i class="fa-solid fa-car"></i></div>
+            <span>DriveEase Rentals</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#fleet"><i class="fa-solid fa-car-side"></i> Browse Fleet</a></li>
+                <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+            </ul>
+        </nav>
+        <div class="nav-user" style="border: none; display: flex; align-items: center; gap: 0.5rem;">
+            <a href="./login?role=customer" class="btn btn-secondary btn-sm"><i class="fa-solid fa-user"></i> Customer Login</a>
+            <a href="./login?role=admin" class="btn btn-primary btn-sm"><i class="fa-solid fa-shield-halved"></i> Admin Portal</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Premium Vehicles for Every Journey</h1>
+        <p>Browse our modern fleet of sedans, SUVs, luxury cars, and electric vehicles. Fast booking, transparent pricing, and zero hassle.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+            <a href="#fleet" class="btn btn-primary" style="padding: 0.85rem 1.75rem; font-size: 1.05rem;">
+                <i class="fa-solid fa-magnifying-glass"></i> Explore 12 Available Vehicles
+            </a>
+            <a href="./all-in-one.html" class="btn btn-secondary" style="padding: 0.85rem 1.75rem; font-size: 1.05rem;">
+                <i class="fa-solid fa-link"></i> All Pages Link
+            </a>
+        </div>
+    </section>
+
+    <main class="container" id="fleet">
+        <div class="page-header">
+            <div class="page-title">
+                <h2>Our Vehicle Fleet</h2>
+                <p>Showing 12 vehicles (9 currently available for instant rental)</p>
+            </div>
+            <div>
+                <a href="./login?role=customer" class="btn btn-success"><i class="fa-solid fa-key"></i> Book a Vehicle</a>
+            </div>
+        </div>
+
+        <div class="vehicle-catalog-grid">
+            <div class="vehicle-card">
+                <div class="vehicle-card-visual">
+                    <i class="fa-solid fa-car-side" style="color: #818cf8;"></i>
+                    <span class="type-pill">Sedan</span>
+                    <span class="badge badge-available"><i class="fa-solid fa-circle-check"></i> Available</span>
+                </div>
+                <div class="vehicle-card-content">
+                    <div>
+                        <h3 class="vehicle-card-title">CityDrive S</h3>
+                        <p class="vehicle-card-specs"><i class="fa-solid fa-tag"></i> <strong>Toyota</strong> | Model: Corolla</p>
+                    </div>
+                    <div class="vehicle-card-footer">
+                        <div class="vehicle-price">₹3,800 <span>/ day</span></div>
+                        <a href="./login?role=customer" class="btn btn-primary btn-sm"><i class="fa-solid fa-key"></i> Rent Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <div class="vehicle-card-visual">
+                    <i class="fa-solid fa-truck-pickup" style="color: #a78bfa;"></i>
+                    <span class="type-pill">SUV</span>
+                    <span class="badge badge-available"><i class="fa-solid fa-circle-check"></i> Available</span>
+                </div>
+                <div class="vehicle-card-content">
+                    <div>
+                        <h3 class="vehicle-card-title">TrailBlazer X</h3>
+                        <p class="vehicle-card-specs"><i class="fa-solid fa-tag"></i> <strong>Honda</strong> | Model: CR-V</p>
+                    </div>
+                    <div class="vehicle-card-footer">
+                        <div class="vehicle-price">₹5,400 <span>/ day</span></div>
+                        <a href="./login?role=customer" class="btn btn-primary btn-sm"><i class="fa-solid fa-key"></i> Rent Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <div class="vehicle-card-visual">
+                    <i class="fa-solid fa-bolt" style="color: #38bdf8;"></i>
+                    <span class="type-pill">Electric</span>
+                    <span class="badge badge-rented"><i class="fa-solid fa-clock"></i> Rented</span>
+                </div>
+                <div class="vehicle-card-content">
+                    <div>
+                        <h3 class="vehicle-card-title">VoltAir E</h3>
+                        <p class="vehicle-card-specs"><i class="fa-solid fa-tag"></i> <strong>Hyundai</strong> | Model: Kona</p>
+                    </div>
+                    <div class="vehicle-card-footer">
+                        <div class="vehicle-price">₹4,900 <span>/ day</span></div>
+                        <button class="btn btn-secondary btn-sm" disabled>Rented</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="about">
+        <p>&copy; 2026 Vehicle Rental Management System | Built with Java Servlets, HTML, CSS, JDBC & MySQL</p>
+    </footer>
+</body>
+</html>
